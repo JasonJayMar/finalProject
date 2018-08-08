@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <title>Manga Anime</title>
+</head>
+<nav>
+
+  <button id="dl" type="button" name="button">Dark/Light</button>
+  <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+  <a href="/home"><i class="fas fa-home"></i></a>
+
+</nav>
+<body id="main">
+  <!-- <section id="rightSide">
+    <a href="/profile2"><i class="fas fa-chevron-circle-right"></i></a>
+  </section> -->
+
+  <!-- <section id="leftSide">
+    <i class="fas fa-chevron-circle-left"></i>
+  </section> -->
+
+  <section id="contain">
+
+    <section id="top">
+      <section id="leafs">
+      </section>
+    </section>
+
+    <section id="middleLeft">
+      <section id="something"></section>
+    </section>
+
+    <section id="middleRight"></section>
+
+    <section id="bottom">
+      <section id="backImg">
+      </section>
+    </section>
+
+  </section>
+
+
+
+
+  <!-- <% if (user.local.email) { %>
+  <p>
+  <strong>id</strong>: <%= user._id %><br>
+  <strong>email</strong>: <%= user.local.email %><br>
+  <strong>password</strong>: <%= user.local.password %>
+</p>
+
+<a href="/unlink/local" class="btn btn-default">Unlink</a>
+<% } else { %>
+<a href="/connect/local" class="btn btn-default">Connect Local</a>
+<% } %>
+
+</div> -->
+
+
+<div id="comment" class="col-sm-6">
+  <h2>Add a message</h2>
+  <% if (user.local.email) { %>
+    <form action="/messages" method="POST">
+      <input type="text" value="<%= user.local.email %>" name="name">
+      <button id="submit"type="submit">Submit</button>
+      <input type="text" placeholder="message" name="msg">
+      <input class="ignore" name="page" value="pageOne">
+    </form>
+    <ul class="messages">
+      <% for(var i=0; i<messages.length; i++) {%>
+        <% if(messages[i].page =='pageOne') {%>
+          <li class="message">
+            <span><%= messages[i].name %></span>
+            <span><%= messages[i].msg %></span>
+            <!-- <span><%= messages[i].thumbUp %></span>
+            <span><%= messages[i].thumbDown %></span>
+            <span><%= messages[i].trash %></span>
+            <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+            <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+            <span><i class="fa fa-trash" aria-hidden="true"></i></span> -->
+          </li>
+          <% } %>
+          <% } %>
+        </ul>
+      </div>
+      <% } %>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+      <script type="text/javascript" src="currentPage.js"></script>
+    </body>
+    </html>

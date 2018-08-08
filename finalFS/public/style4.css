@@ -1,0 +1,405 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("http://static.pinwallpapers.com/anime/anime-backgrounds/2k-hd-anime-backgrounds-background-wallpaper-3377315.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-------------Profile page-----------------*/
+#main4{
+ background-image: url("http://goboiano.com/wp-content/uploads/2015/03/tumblr_mmt1e3bpCA1sor8q8o9_1280.jpg");
+ background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes fly-cycle {
+  100% {
+  background-position: 100% 0;
+  }
+}
+#dl{
+  margin: 0;
+  color: black;
+}
+#main4.main2{
+  background-image: url("https://i.pinimg.com/originals/0a/ac/ed/0aaced02aaea5de3c568ff3b00a857bc.jpg");
+  background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+
+nav{
+  width: 100%;
+  height: 30px;
+}
+.fa-home{
+  font-size: 32px;
+  float: left;
+  padding-right: 2%;
+}
+a{
+  color: white;
+}
+
+nav>button{
+  float: right;
+}
+nav>input{
+  margin-right: 1%;
+  float: right;
+}
+nav>.fa-drupal{
+  float: left;
+}
+
+#rightSide{
+  float: right;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+#leftSide{
+  float: left;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+i  {
+  font-size: 85px;
+  color: grey;
+}
+
+#contain{
+  border: 1px solid black;
+  height: 800px;
+  width: 63%;
+  border-radius: 10px;
+  margin-left: 20%;
+  box-shadow: 10px 10px 30px 20px;
+  margin-top: 22px;
+}
+
+#top{
+  border: 3px solid black;
+  height: 270px;
+  width: 100%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("http://37.media.tumblr.com/de9e5ee532f312133e9fc93c83a3f93d/tumblr_n6bektR2IP1qj313eo1_500.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#something{
+  height: 270px;
+  width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEMCkIQLVgQ5Ey-HxgQ3vsNdB1kHCnAiNwLQHltGJWB3-K2EPuug");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flashit{
+  color:white;
+	-webkit-animation: flash linear 4s infinite;
+	animation: flash linear 4s ;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+
+
+#middleLeft{
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url("http://vignette4.wikia.nocookie.net/boladedrac-cat/images/0/03/Goku_superguerrer_manga.png/revision/latest?cb=20121018081041&path-prefix=ca");
+  background-repeat: no-repeat;
+  background-size: 100% 350px;
+  transition: 1s;
+}
+#leafs{
+  height: 200px;
+  width: 100%;
+  transition: 1s;
+}
+
+.element{
+  animation: pulse 14.3s;
+  transition: 1s;
+}
+
+@keyframes pulse {
+  20% {
+    background-image: url("https://thumbs.gfycat.com/AnxiousIdolizedGermanwirehairedpointer-size_restricted.gif");
+  }
+}
+
+
+#middleRight {
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-image: url("https://vignette.wikia.nocookie.net/dragonball/images/5/57/DBZ_Manga_Chapter_345_-_Vegeta%27s_Photon_Bomber_2.PNG/revision/latest?cb=20121229210652");
+  transition: 1s;
+  background-size: 100% 228px;
+  background-repeat: no-repeat;
+}
+#middleRight:hover {
+	background-image: url("https://vignette.wikia.nocookie.net/dragonball/images/0/02/DBZ_Manga_Chapter_327_-_Frieza_You_Will_Die_By_My_Hand%21_2.png/revision/latest?cb=20140328064048");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1s;
+  background-size: 100% 228px;
+}
+.shake{
+  animation:shake .63s cubic-bezier(0.16,.12,0.19,0.17) both;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(12px, 0, 0);
+  }
+}
+
+
+
+
+
+#bottom{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlXeqqxClPXL5fD7y5tZc2i_sZvHKVMmkTDkoUV2qV-0Ha5IkU");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bottom.bottom2{
+  background-image: url("https://78.media.tumblr.com/17a9d976cbee02f537e3e0ee167ccec0/tumblr_n826adKE7b1rrtay3o6_500.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 329px;
+
+}
+
+
+
+
+
+
+/* Bottom of*/
+
+
+#comment {
+  border: 1px solid black;
+  width: 63%;
+  margin-left: 20%;
+  margin-top: 33px;
+  height: 354px;
+  background: darkgrey;
+  box-shadow: 0px 0px 18px 9px;
+  overflow: auto;
+  border-radius: 10px;
+}
+.ignore{
+  display: none;
+}
+
+h2{
+  text-align: center;
+  font-size: 29px;
+}
+
+form{
+  margin-left: 28%;
+  width: 53%;
+}
+form>button{
+  font-size: 20px;
+}
+
+input{
+  font-size: 16px;
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+}
+
+#submit{
+  box-shadow: 0px 0px 8px 3px black;
+  font-size: 20px;
+  width: 20%;
+  margin-left: 5%;
+  border-radius: 5px;
+  float: left;
+  color: white;
+  background-color: grey;
+  border-color: grey;
+  font-weight: bold;
+}
+#submit:hover{
+  border-radius: 5px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+}
+li{
+  width: 100%;
+    float: left;
+    margin-top: 60px;
+}
+
+@media (min-width: 667px) and (max-width: 1171px){
+  #firstText{
+    height: 119px;
+    font-size: 59px;
+  }
+  #rightSide{
+    margin-right: 5%;
+  }
+  #leftSide{
+    margin-left: 2%;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #submit{
+    width: 28%;
+  }
+}
+@media (max-width: 667px) {
+  a{
+    margin-left: 36%
+  }
+
+  #firstText{
+    width: 50%;
+    height: 77px;
+    margin-left: 28%;
+  }
+  .container .jumbotron{
+    background-image: url("https://pre00.deviantart.net/b284/th/pre/f/2009/322/f/2/starry_night_sky_background_by_1animeaddict1.jpg");
+  }
+  #main{
+    background-image: none;
+    background-color: black;
+  }
+  i{
+    font-size: 42px;
+  }
+  #rightSide{
+    margin-top: 0px;
+    width: 0%;
+    margin-right: 14%;
+    height: 40px;
+  }
+  #leftSide{
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 40px;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  h2{
+    font-size: 30px;
+    width: 93%;
+    margin: 0%;
+  }
+  input{
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+  }
+  #contain {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #comment{
+    margin: 0;
+    width: 100%;
+    height: 170px;
+  }
+  button{
+    display: none;
+  }
+    li{
+    width: 100%;
+    float: left;
+    margin-top: 44px;
+  }
+  .fa-user-alt{
+    width: 100%;
+  }
+}

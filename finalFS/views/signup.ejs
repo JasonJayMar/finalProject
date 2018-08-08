@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Manga Anime</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="smallSum">
+    <h1><p>If you love anime and love reading manga then you should try Manga Now!</p></h1>
+    <h2><p>You will be reading some of the top animes but with a twist, You will be reading while
+      also having some animation so you can be more hype about reading.</p></h2>
+    </aside>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1>Signup</h1>
+
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form class="signU"action="/signup" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" name="email" placeholder="EMAIL">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="PASSWORD">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+    </form>
+
+    <hr>
+
+    <p>Already have an account? <a href="/login">Login</a></p>
+    <p>Or go <a href="/">home</a>.</p>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <title>Manga Anime</title>
+  <link rel="stylesheet" href="assets/demo.css">
+
+  <script src="build/tracking-min.js"></script>
+  <script src="build/data/face-min.js"></script>
+   <script src="node_modules/dat.gui/build/dat.gui.min.js"></script>
+  <script src="assets/stats.min.js"></script>
+
+  <style>
+  video, canvas {
+    margin-left: 230px;
+    margin-top: 120px;
+    position: absolute;
+  }
+  </style>
+</head>
+    <nav>
+      <button id="dl" type="button" name="button">Dark/Light</button>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      <a href="/home"><i class="fas fa-home"></i></a>
+
+
+    </nav>
+    <body id="main4">
+
+    <!-- <section id="leftSide">
+      <a href="/profile2"><i class="fas fa-chevron-circle-left"></i></a>
+    </section> -->
+
+    <section id="contain">
+
+      <section id="top">
+        <section id="something">
+        </section>
+      </section>
+
+      <section id="middleLeft">
+        <section id="leafs"></section>
+      </section>
+
+      <section id="middleRight">
+        <section id="bColor"></section>
+      </section>
+
+      <section id="bottom">
+        <section id="backImg">
+        </section>
+      </section>
+
+    </section>
+
+
+
+
+    <!-- <% if (user.local.email) { %>
+    <p>
+    <strong>id</strong>: <%= user._id %><br>
+    <strong>email</strong>: <%= user.local.email %><br>
+    <strong>password</strong>: <%= user.local.password %>
+  </p>
+
+  <a href="/unlink/local" class="btn btn-default">Unlink</a>
+  <% } else { %>
+  <a href="/connect/local" class="btn btn-default">Connect Local</a>
+  <% } %>
+
+</div> -->
+
+
+<div id="comment" class="col-sm-6">
+  <h2>Add a message</h2>
+  <% if (user.local.email) { %>
+    <form action="/messages3" method="POST">
+      <input type="text" value="<%= user.local.email %>" name="name">
+      <button id="submit"type="submit">Submit</button>
+      <input type="text" placeholder="message" name="msg">
+      <input class="ignore" name="page" value="pageThree">
+    </form>
+    <ul class="messages">
+      <% for(var i=0; i<messages.length; i++) {%>
+        <% if(messages[i].page =='pageThree') {%>
+        <li class="message">
+          <span><%= messages[i].name %></span>
+          <span><%= messages[i].msg %></span>
+          <!-- <span><%= messages[i].thumbUp %></span>
+          <span><%= messages[i].thumbDown %></span>
+          <span><%= messages[i].trash %></span>
+          <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+          <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span> -->
+        </li>
+        <% } %>
+        <% } %>
+      </ul>
+    </div>
+    <% } %>
+
+    <div class="demo-frame">
+
+        <video id="video" width="200" height="200" preload autoplay loop muted></video>
+        <canvas id="canvas" width="200" height="200"></canvas>
+
+    </div>
+
+    <script>
+      window.onload = function() {
+        function flashit() {
+          document.getElementById('something').classList.add("flashit")
+          console.log("flash");
+        }
+        function element(){
+          document.getElementById('leafs').classList.add("element");
+          console.log("element");
+        }
+        function shake(){
+          document.getElementById('middleRight').classList.add("shake");
+          console.log("shake");
+        }
+        function bottom2(){
+          document.getElementById('bottom').classList.toggle("bottom2")
+          console.log("gifChange");
+        }
+        var video = document.getElementById('video');
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+
+        var tracker = new tracking.ObjectTracker('face');
+        tracker.setInitialScale(4);
+        tracker.setStepSize(2);
+        tracker.setEdgesDensity(0.1);
+
+        tracking.track('#video', tracker, { camera: true });
+
+        tracker.on('track', function(event) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+
+          event.data.forEach(function(rect) {
+            context.strokeStyle = '#a64ceb';
+            context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+            context.font = '11px Helvetica';
+            context.fillStyle = "#fff";
+            context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
+            context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
+            if(rect.x <= 25){
+              flashit();
+            }
+            if(rect.x >= 80){
+              element();
+            }
+            if(rect.y >=90){
+              shake();
+            }
+            if(rect.y<=40){
+              bottom2();
+            }
+          });
+        });
+
+        var gui = new dat.GUI();
+        gui.add(tracker, 'edgesDensity', 0.1, 0.5).step(0.01);
+        gui.add(tracker, 'initialScale', 1.0, 10.0).step(0.1);
+        gui.add(tracker, 'stepSize', 1, 5).step(0.1);
+      };
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="currentPage.js"></script>
+    <script type="text/javascript" src="main4.js"></script>
+
+</body>
+</html>

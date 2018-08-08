@@ -1,0 +1,363 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("http://static.pinwallpapers.com/anime/anime-backgrounds/2k-hd-anime-backgrounds-background-wallpaper-3377315.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-------------Profile page-----------------*/
+#main3{
+ background-image: url("http://goboiano.com/wp-content/uploads/2015/03/tumblr_mmt1e3bpCA1sor8q8o9_1280.jpg");
+ background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+@keyframes fly-cycle {
+  100% {
+  background-position: -890px 0;
+  }
+}
+#dl{
+  margin: 0;
+  color: black;
+}
+#main3.main2{
+  background-image: url("https://i.pinimg.com/originals/0a/ac/ed/0aaced02aaea5de3c568ff3b00a857bc.jpg");
+  background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+
+nav{
+  width: 100%;
+  height: 30px;
+}
+.fa-home{
+  font-size: 32px;
+  float: left;
+  padding-right: 2%;
+}
+a{
+  color: white;
+}
+
+nav>button{
+  float: right;
+}
+nav>input{
+  margin-right: 1%;
+  float: right;
+}
+nav>.fa-drupal{
+  float: left;
+}
+
+#rightSide{
+  float: right;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+#leftSide{
+  float: left;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+i  {
+  font-size: 85px;
+  color: grey;
+}
+
+#contain{
+  border: 1px solid black;
+  height: 800px;
+  width: 63%;
+  border-radius: 10px;
+  margin-left: 20%;
+  box-shadow: 10px 10px 30px 20px;
+  margin-top: 22px;
+}
+
+#top{
+  border: 3px solid black;
+  height: 270px;
+  width: 100%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("http://www.ricedigital.co.uk/wp-content/uploads/2017/08/My-Hero-Academia-manga.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#something{
+  height: 274px;
+  width: 72%;
+  animation: pulse 9s infinite;
+  background-image: url("http://www.transparentpng.com/thumb/lightning/lightning-pictures-5.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -6px;
+}
+@keyframes pulse {
+  50% {
+    background-image: url("https://cdn150.picsart.com/upscale-249329239011212.png?r1024x1024");
+  }
+}
+
+#middleLeft{
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url("https://vignette.wikia.nocookie.net/villains/images/7/7e/Chizome-Akaguro.jpg/revision/latest?cb=20160113044403");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#leafs{
+  background-image: url("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/29183700/png-green-leaves-green-leaves-transparent-background-1920.png");
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+
+#middleRight {
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-image: url("http://www.allyouranime.net/wp-content/uploads/2017/01/My-Hero-Academia-121-123-Image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bColor{
+  height: 200px;
+  width: 100%;
+  animation: pulse 2s infinite;
+  opacity: .7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#bottom{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("https://i.ytimg.com/vi/R6myQKDRz24/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#backImg{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("http://www.pngmart.com/files/3/Mist-PNG-Picture.png");
+  background-size: cover;
+}
+
+
+
+
+
+/* Bottom of the page */
+#comment {
+  border: 1px solid black;
+  width: 63%;
+  margin-left: 20%;
+  margin-top: 33px;
+  height: 354px;
+  background: darkgrey;
+  box-shadow: 0px 0px 18px 9px;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+
+h2{
+  text-align: center;
+  font-size: 29px;
+}
+
+form{
+  margin-left: 28%;
+  width: 53%;
+}
+form>button{
+  font-size: 20px;
+}
+
+input{
+  font-size: 16px;
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+}
+
+.ignore{
+  display: none;
+}
+
+#submit{
+  box-shadow: 0px 0px 8px 3px black;
+  font-size: 20px;
+  width: 20%;
+  margin-left: 5%;
+  border-radius: 5px;
+  float: left;
+  color: white;
+  background-color: grey;
+  border-color: grey;
+  font-weight: bold;
+}
+#submit:hover{
+  border-radius: 5px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+}
+li{
+  width: 100%;
+    float: left;
+    margin-top: 60px;
+}
+
+@media (min-width: 667px) and (max-width: 1171px){
+  #firstText{
+    height: 119px;
+    font-size: 59px;
+  }
+  #rightSide{
+    margin-right: 5%;
+  }
+  #leftSide{
+    margin-left: 2%;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #submit{
+    width: 28%;
+  }
+}
+@media (max-width: 667px) {
+  a{
+    margin-left: 36%
+  }
+
+  #firstText{
+    width: 50%;
+    height: 77px;
+    margin-left: 28%;
+  }
+  .container .jumbotron{
+    background-image: url("https://pre00.deviantart.net/b284/th/pre/f/2009/322/f/2/starry_night_sky_background_by_1animeaddict1.jpg");
+  }
+  #main3{
+    background-image: none;
+    background-color: black;
+  }
+  i{
+    font-size: 42px;
+  }
+  #rightSide{
+    margin-top: 0px;
+    width: 0%;
+    margin-right: 14%;
+    height: 40px;
+  }
+  #leftSide{
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 40px;
+  }
+  #something{
+    width: 100%;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  h2{
+    font-size: 30px;
+    width: 93%;
+    margin: 0%;
+  }
+  input{
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+  }
+  #contain {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #comment{
+    margin: 0;
+    width: 100%;
+    height: 170px;
+  }
+  button{
+    display: none;
+  }
+    li{
+    width: 100%;
+    float: left;
+    margin-top: 44px;
+  }
+  .fa-user-alt{
+    width: 100%;
+  }
+}

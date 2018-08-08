@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("https://wallup.net/wp-content/uploads/2015/12/3075-anime-texture-wood-monochrome-gray-simple_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#main{
+  float: left;
+  height: 620px;
+  width: 60%;
+  border: 1px solid black;
+}
+a{
+  color: white;
+ float: left;
+ margin-top: -23px;
+}
+.welcome>h3{
+  width: 23%;
+  height: 246px;
+  margin-left: 1%;
+  margin-bottom: -35px;
+
+}
+.welcome>h3>img{
+  height: 96px;
+  width: 60%;
+  border-radius: 5px;
+}
+.welcome>h1{
+  width: 87%;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-size: 46px;
+  float: left;
+  margin-top: 0;
+}
+.welcome>form>input{
+  width: 11%;
+  margin-left: 1%;
+}
+.following>h1{
+  color: white;
+  font-size: 44px;
+}
+.following>h3{
+  color: white;
+}
+
+.grid{
+  border: 1px solid black;
+  width: 40%;
+  height: 620px;
+  float: right;
+  background-color: black;
+  border-radius: 20px;
+  overflow: auto;
+  margin-top: 0;
+}
+
+.grid>h1{
+  color: white;
+  margin-left: 38%;
+}
+.grid-item{
+  border: 2px solid black;
+  height: 400px;
+  width: 60%;
+  margin-left: 18%;
+  margin-top: 7px;
+ border-radius: 5px;
+}
+
+img{
+ height: 397px;
+ width: 100%;
+ border-radius: 5px;
+
+}
+
+img:hover{
+transform: scale(1.2);
+}

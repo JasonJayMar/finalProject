@@ -1,0 +1,506 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("https://pre00.deviantart.net/a0b0/th/pre/f/2015/071/2/8/anime_background___landscape_final_vers__by_jikanpulvis-d8lgiyb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*------------Signup page---------------------*/
+aside{
+  float: left;
+  height: 371px;
+  width: 30%;
+  margin-left: 19%;
+  border-right: 1px solid white;
+  margin-top: 107px;
+  padding-right: 1%;
+}
+.signU{
+  margin-left: 8%;
+}
+aside>h1{
+font-size: 41px;
+}
+aside>h2{
+  font-size: 20px;
+  text-align: left;
+}
+.col-sm-offset-3 {
+  margin-left: 0;
+  margin-top: 107px;
+}
+
+
+/*------------Login Page-----------------------*/
+.container .jumbotron{
+  background-image: url("https://78.media.tumblr.com/981b21643e9882ed625f20c1ef7d7eb3/tumblr_p24ad0eBXJ1ui7oe1o1_500.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+#firstText{
+  background-color: white;
+  width: 43%;
+  margin-left: 33%;
+  border-radius: 10px 10px 10px 10px;
+  height: 78px;
+  opacity: .8;
+  font-family: 'Acme', sans-serif;
+}
+
+.form-control{
+  margin-top: 20px;
+  opacity: .8;
+  font-size: 20px;
+}
+
+#logUp{
+  color: white;
+}
+/* label{
+  color: lightgrey;
+} */
+.jumbotron p{
+  color: lightgrey;
+}
+.btn-warning{
+border-radius: 5px;
+background-color: grey;
+border-color: grey;
+color: white;
+font-weight: bold;
+margin-right: 1%;
+margin-left: 2%;
+margin-top: 8px;
+}
+.btn-warning:hover{
+  border-radius: 5px;
+  background-color: white;
+  border-color: lightgrey;
+  color: black;
+}
+
+
+
+/*-------------Profile page-----------------*/
+#main{
+ background-image: url("http://goboiano.com/wp-content/uploads/2015/03/tumblr_mmt1e3bpCA1sor8q8o9_1280.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+@keyframes fly-cycle {
+  100% {
+  background-position: -890px 0;
+  }
+}
+#dl{
+  margin: 0;
+  color: black;
+}
+#main.main2{
+  background-image: url("https://i.pinimg.com/originals/0a/ac/ed/0aaced02aaea5de3c568ff3b00a857bc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+
+
+/* #lookUp{
+  border-radius: 5px;
+  background-color: grey;
+  border-color: grey;
+  color: white;
+  font-weight: bold;
+  margin-right: 1%;
+}
+#lookUp:hover{
+  border-radius: 5px;
+  background-color: white;
+  border-color: lightgrey;
+  color: black;
+}
+#search{
+  width: 20%;
+}
+.fa-drupal:before {
+  content: "\f1a9";
+  text-shadow: -9px -3px 8px black;
+} */
+nav{
+  width: 100%;
+  height: 30px;
+}
+.fa-home{
+  font-size: 32px;
+  float: left;
+  padding-right: 2%;
+}
+a{
+  color: white;
+}
+.fa-search::before {
+display: none;
+}
+
+nav>button{
+  float: right;
+}
+nav>input{
+  margin-right: 1%;
+  float: right;
+}
+nav>.fa-drupal{
+  float: left;
+}
+
+#rightSide{
+  float: right;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+#leftSide{
+  float: left;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+i  {
+  font-size: 85px;
+  color: grey;
+}
+
+#contain{
+  border: 1px solid black;
+  height: 800px;
+  width: 63%;
+  border-radius: 10px;
+  margin-left: 20%;
+  box-shadow: 10px 10px 30px 20px;
+  margin-top: 22px;
+}
+
+#top{
+  border: 3px solid black;
+  height: 270px;
+  width: 100%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("https://i.ytimg.com/vi/xIWs0izudtU/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#leafs{
+  width: 43%;
+  height: 264px;
+  background-image: url("https://pre00.deviantart.net/afdc/th/pre/i/2016/261/7/6/unrestricted___falling_autumn_leaves_by_frozenstocks-d7o1bok.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  float: left;
+}
+
+.movement{
+  position: relative;
+  -webkit-animation: mymove 1s;
+  animation: mymove 2s ;
+}
+
+@-webkit-keyframes mymove {
+  from {left: 20%;}
+  to {left: 0%;}
+}
+
+@keyframes mymove {
+  from {left: 57%;}
+  to {left: 0%;}
+}
+
+
+#middleLeft{
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url("https://ae01.alicdn.com/kf/HTB1Rh1hSpXXXXbXXXXXq6xXFXXXs/square-canvas-fabric-poster-print-Tokyo-Ghoul-anime-manga-artwork-TCJ36-for-wall-art-room-decoration.jpg_640x640.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#something{
+  height: 200px;
+  width: 100%;
+}
+.element{
+  animation: pulse 8s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: red;
+  }
+}
+#middleRight {
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-image: url("http://jpninfo.com/wp-content/uploads/2016/08/tokyo-ghoul-manga-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shake{
+  animation:shake .5s cubic-bezier(0.16,.12,0.19,0.17) both;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(8px, 0, 0);
+  }
+}
+#bottom{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("https://cdnx.kincir.com/old/2017/september/5-adegan-pertarungan-paling-dahsyat-di-anime-tokyo-ghoul/feature-tokyo-ghoul-1-1300x500.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#backImg{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("http://www.ilcineocchio.it/cine/wp-content/uploads/2016/06/tokyo-Ken-Kaneki-manga.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.flashit{
+  color:white;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 2s ;
+}
+@-webkit-keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
+
+
+
+
+/* Bottom of the page */
+
+
+#comment {
+  border: 1px solid black;
+  width: 63%;
+  margin-left: 20%;
+  margin-top: 33px;
+  height: 354px;
+  background: darkgrey;
+  box-shadow: 0px 0px 18px 9px;
+  overflow: auto;
+  border-radius: 10px;
+}
+.ignore{
+  display: none;
+}
+
+h2{
+  text-align: center;
+  font-size: 29px;
+}
+
+form{
+  margin-left: 28%;
+  width: 53%;
+}
+form>button{
+  font-size: 20px;
+}
+
+input{
+  font-size: 16px;
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+}
+
+#submit{
+  box-shadow: 0px 0px 8px 3px black;
+  font-size: 20px;
+  width: 20%;
+  margin-left: 5%;
+  border-radius: 5px;
+  float: left;
+  color: white;
+  background-color: grey;
+  border-color: grey;
+  font-weight: bold;
+}
+#submit:hover{
+  border-radius: 5px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+}
+li{
+  width: 100%;
+    float: left;
+    margin-top: 60px;
+}
+
+@media (min-width: 667px) and (max-width: 1171px){
+  #firstText{
+    height: 119px;
+    font-size: 59px;
+  }
+  #rightSide{
+    margin-right: 5%;
+  }
+  #leftSide{
+    margin-left: 2%;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #submit{
+    width: 28%;
+  }
+}
+@media (max-width: 667px) {
+  a{
+    margin-left: 36%
+  }
+
+  #firstText{
+    width: 50%;
+    height: 77px;
+    margin-left: 28%;
+  }
+  .container .jumbotron{
+    background-image: url("https://pre00.deviantart.net/b284/th/pre/f/2009/322/f/2/starry_night_sky_background_by_1animeaddict1.jpg");
+  }
+  #main{
+    background-image: none;
+    background-color: black;
+  }
+  i{
+    font-size: 42px;
+  }
+  #rightSide{
+    margin-top: 0px;
+    width: 0%;
+    margin-right: 14%;
+    height: 40px;
+  }
+  #leftSide{
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 40px;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  h2{
+    font-size: 30px;
+    width: 93%;
+    margin: 0%;
+  }
+  input{
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+  }
+  #contain {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #comment{
+    margin: 0;
+    width: 100%;
+    height: 170px;
+  }
+  button{
+    display: none;
+  }
+    li{
+    width: 100%;
+    float: left;
+    margin-top: 44px;
+  }
+  .fa-user-alt{
+    width: 100%;
+  }
+}

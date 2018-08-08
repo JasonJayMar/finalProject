@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+<section id="main">
+  <section class="welcome">
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    <h1>Hello and welcome to your home page</h1>
+    <h3><img src="<%= user.profileImg %>" alt=""></h3>
+    <form action="/up" enctype="multipart/form-data" method="post">
+   <input type="file" name="file-to-upload">
+   <input type="submit" value="Upload">
+ </form>
+
+    </section>
+    <section class="following">
+      <h1>Following</h1>
+      <h3>Not following anything.</h3>
+    </section>
+  </section>
+
+
+  <section class="grid">
+    <h1>RECENT</h1>
+    <section class="grid-item"><a href="/profile"><img src="https://static.tvtropes.org/pmwiki/pub/images/tokyo_ghoul_5787.jpg" alt="Image"></a></section>
+    <section class="grid-item"><a href="/profile4"><img src="https://crackleplus.com/wp-content/uploads/2018/07/dBsDWUcdfbuZwglgyeeQ9ChRoS4.jpg" alt="Image"></a></section>
+    <section class="grid-item"><a href="/profile3"><img src="https://img1.ak.crunchyroll.com/i/spire1/281089c6a9e64236a10e3b4232474e411532451975_full.jpg" alt="Image"><a/></section>
+    <section class="grid-item"><a href="/profile2"><img src="https://static.tvtropes.org/pmwiki/pub/images/NarutoCover_2145.jpg" alt="Image"><a/></section>
+    <section class="grid-item"><img src="https://is4-ssl.mzstatic.com/image/thumb/Video3/v4/39/d8/55/39d855d2-84ab-91dd-f266-8bb8c8fd00f2/source/1200x630bb.jpg" alt="Image"></section>
+    <section class="grid-item"><img src="https://images-na.ssl-images-amazon.com/images/I/717aat3l-YL._SY606_.jpg" alt="Image"></section>
+  </section>
+</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="currentPage.js"></script>
+<script type="text/javascript"  src="public/home.js"></script>
+</body>
+</html>

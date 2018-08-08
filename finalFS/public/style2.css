@@ -1,0 +1,419 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: url("http://static.pinwallpapers.com/anime/anime-backgrounds/2k-hd-anime-backgrounds-background-wallpaper-3377315.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*-------------Profile page-----------------*/
+#main{
+ background-image: url("http://goboiano.com/wp-content/uploads/2015/03/tumblr_mmt1e3bpCA1sor8q8o9_1280.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+@keyframes fly-cycle {
+  100% {
+  background-position: -890px 0;
+  }
+}
+#dl{
+  margin: 0;
+  color: black;
+}
+#main.main2{
+  background-image: url("https://i.pinimg.com/originals/0a/ac/ed/0aaced02aaea5de3c568ff3b00a857bc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-name: fly-cycle;
+  animation-timing-function: steps(90);
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+}
+/*
+
+#lookUp{
+  border-radius: 5px;
+  background-color: grey;
+  border-color: grey;
+  color: white;
+  font-weight: bold;
+  margin-right: 1%;
+}
+#lookUp:hover{
+  border-radius: 5px;
+  background-color: white;
+  border-color: lightgrey;
+  color: black;
+}
+#search{
+  width: 20%;
+} */
+
+nav{
+  width: 100%;
+  height: 30px;
+}
+.fa-home{
+  font-size: 32px;
+  float: left;
+  padding-right: 2%;
+}
+a{
+  color: white;
+}
+
+
+
+nav>button{
+  float: right;
+}
+nav>input{
+  margin-right: 1%;
+  float: right;
+}
+
+
+#rightSide{
+  float: right;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+#leftSide{
+  float: left;
+  margin-top: 386px;
+  height: 84px;
+  width: 6%;
+}
+
+i  {
+  font-size: 85px;
+  color: grey;
+}
+
+#contain{
+  border: 1px solid black;
+  height: 800px;
+  width: 63%;
+  border-radius: 10px;
+  margin-left: 20%;
+  box-shadow: 10px 10px 30px 20px;
+  margin-top: 22px;
+}
+
+#top{
+  border: 3px solid black;
+  height: 270px;
+  width: 100%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("https://avatars.mds.yandex.net/get-pdb/28866/7c4ed84b-81a0-46b3-99d1-58ac68466529/s1200");
+  background-repeat: no-repeat;
+  background-size: auto ;
+}
+.shake{
+  animation:shake .56s cubic-bezier(0.16,.12,0.19,0.17) both;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-8px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(5px, 0, 0);
+  }
+}
+
+#middleLeft{
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url("https://vignette.wikia.nocookie.net/animemanganaruto/images/c/c7/Kakashi_ataca_a_Zabuza.png/revision/latest?cb=20111210150208&path-prefix=es");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#middleLeft.something{
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  background-image: url("https://i0.wp.com/i766.photobucket.com/albums/xx310/HeroSpartan/haku.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#something{
+  height: 200px;
+  width: 100%;
+}
+.element{
+  animation: pulse 8s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: white;
+
+  }
+}
+
+#middleRight {
+  border: 3px solid black;
+  height: 200px;
+  width: 50%;
+  float: left;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  background-image: url("http://2.bp.blogspot.com/-5xijNxUADkg/UkYbOP7LstI/AAAAAAAAAAg/z8P0Be4fxC0/s1600/Kyubi+Naruto.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+#middleRight:hover{
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+#changingColor{
+  height: 195px;
+  width: 100%;
+  animation: pulse 2s infinite;
+  opacity: .2;
+  background-color: red;
+
+}
+
+
+#bottom{
+  border: 3px solid black;
+  height: 329px;
+  float: left;
+  width: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-image: url("http://comicsalliance.com/files/2015/11/naruto21.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bottom>img{
+  height: 286px;
+  margin-left: 24%;
+  width: 54%;
+}
+
+
+/* Bottom of the page */
+#comment {
+  border: 1px solid black;
+  width: 63%;
+  margin-left: 20%;
+  margin-top: 33px;
+  height: 354px;
+  background: darkgrey;
+  box-shadow: 0px 0px 18px 9px;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.ignore{
+  display: none;
+}
+
+h2{
+  text-align: center;
+  font-size: 29px;
+}
+
+form{
+  margin-left: 28%;
+  width: 53%;
+}
+form>button{
+  font-size: 20px;
+}
+
+input{
+  font-size: 16px;
+  width: 40%;
+  float: left;
+  margin-left: 2%;
+}
+
+#submit{
+  box-shadow: 0px 0px 8px 3px black;
+  font-size: 20px;
+  width: 20%;
+  margin-left: 5%;
+  border-radius: 5px;
+  float: left;
+  color: white;
+  background-color: grey;
+  border-color: grey;
+  font-weight: bold;
+}
+#submit:hover{
+  border-radius: 5px;
+  border-color: grey;
+  background-color: white;
+  color: black;
+}
+li{
+  width: 100%;
+    float: left;
+    margin-top: 60px;
+}
+
+@media (min-width: 667px) and (max-width: 1171px){
+  #firstText{
+    height: 119px;
+    font-size: 59px;
+  }
+  #rightSide{
+    margin-right: 5%;
+  }
+  #leftSide{
+    margin-left: 2%;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  #submit{
+    width: 28%;
+  }
+}
+@media (max-width: 667px) {
+  a{
+    margin-left: 36%
+  }
+
+  #firstText{
+    width: 50%;
+    height: 77px;
+    margin-left: 28%;
+  }
+  .container .jumbotron{
+    background-image: url("https://pre00.deviantart.net/b284/th/pre/f/2009/322/f/2/starry_night_sky_background_by_1animeaddict1.jpg");
+  }
+  #main{
+    background-image: none;
+    background-color: black;
+  }
+  i{
+    font-size: 42px;
+  }
+  #rightSide{
+    margin-top: 0px;
+    width: 0%;
+    margin-right: 14%;
+    height: 40px;
+  }
+  #leftSide{
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 40px;
+  }
+  .fa-drupal:before{
+    display: none;
+  }
+.fa-search::before{
+  content: "\f002";
+  float: right;
+  width: 6%;
+  font-size: 36px;
+  margin-left: 2%;
+  }
+  #lookUp{
+    display: none;
+  }
+  #search{
+    display: none;
+  }
+  h2{
+    font-size: 30px;
+    width: 93%;
+    margin: 0%;
+  }
+  input{
+    width: 50%;
+    float: left;
+    margin-right: 1%;
+  }
+  #contain {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #comment{
+    margin: 0;
+    width: 100%;
+    height: 170px;
+  }
+  button{
+    display: none;
+  }
+    li{
+    width: 100%;
+    float: left;
+    margin-top: 44px;
+  }
+  .fa-user-alt{
+    width: 100%;
+  }
+}
