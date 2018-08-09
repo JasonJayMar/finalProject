@@ -1,4 +1,4 @@
-# finalProject
+# Final Project
 
 This is my final project that I presented during demo day. This is a full stack app with HTML, CSS, JavaScript, Node JS, MongoDB, and more.
 In this project users are able to make a account and go into their home page. After that they have option to recent mangas, right now 
@@ -8,3 +8,11 @@ where when the user moves their head up, down, left or right will shoot out a an
 I have a live demo of it on heroku 
 
 Thanks for look at my code.
+
+# Install
+
+1. npm install
+
+# Run
+
+2. localhost:8080
